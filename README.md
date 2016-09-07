@@ -11,7 +11,7 @@ This project requires **Python 2.7** and the following Python libraries installe
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
 
-Udacity recommends our students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
+Udacity recommends our students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
 
 ### Code
 
@@ -62,3 +62,5 @@ The dataset used in this project is included as `student-data.csv`. This dataset
 - `absences` : number of school absences (numeric: from 0 to 93)
 - `passed` : did the student pass the final exam (binary: yes or no)
 # student_intervention
+
+Good Luck
