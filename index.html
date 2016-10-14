@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Student intervention by rishabmps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Student intervention</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/rishabmps/student_intervention" class="btn">View on GitHub</a>
+      <a href="https://github.com/rishabmps/student_intervention/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/rishabmps/student_intervention/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="supervised-learning" class="anchor" href="#supervised-learning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Supervised Learning</h1>
+
+<h2>
+<a id="building-a-student-intervention-system" class="anchor" href="#building-a-student-intervention-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building a Student Intervention System</h2>
+
+<h3>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h3>
+
+<p>This project requires <strong>Python 2.7</strong> and the following Python libraries installed:</p>
+
+<ul>
+<li><a href="http://www.numpy.org/">NumPy</a></li>
+<li><a href="http://pandas.pydata.org">Pandas</a></li>
+<li><a href="http://scikit-learn.org/stable/">scikit-learn</a></li>
+</ul>
+
+<p>You will also need to have software installed to run and execute an <a href="http://ipython.org/notebook.html">iPython Notebook</a></p>
+
+<p>I recommend to install <a href="https://www.continuum.io/downloads">Anaconda</a>, a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.</p>
+
+<h3>
+<a id="code" class="anchor" href="#code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code</h3>
+
+<p>Template code is provided in the notebook <code>student_intervention.ipynb</code> notebook file. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project.</p>
+
+<h3>
+<a id="run" class="anchor" href="#run" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run</h3>
+
+<p>In a terminal or command window, navigate to the top-level project directory <code>student_intervention/</code> (that contains this README) and run one of the following commands:</p>
+
+<p><code>ipython notebook student_intervention.ipynb</code><br>
+<code>jupyter notebook student_intervention.ipynb</code></p>
+
+<p>This will open the iPython Notebook software and project file in your browser.</p>
+
+<h2>
+<a id="data" class="anchor" href="#data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data</h2>
+
+<p>The dataset used in this project is included as <code>student-data.csv</code>. This dataset has the following attributes:</p>
+
+<ul>
+<li>
+<code>school</code> : student's school (binary: "GP" or "MS")</li>
+<li>
+<code>sex</code> : student's sex (binary: "F" - female or "M" - male)</li>
+<li>
+<code>age</code> : student's age (numeric: from 15 to 22)</li>
+<li>
+<code>address</code> : student's home address type (binary: "U" - urban or "R" - rural)</li>
+<li>
+<code>famsize</code> : family size (binary: "LE3" - less or equal to 3 or "GT3" - greater than 3)</li>
+<li>
+<code>Pstatus</code> : parent's cohabitation status (binary: "T" - living together or "A" - apart)</li>
+<li>
+<code>Medu</code> : mother's education (numeric: 0 - none,  1 - primary education (4th grade), 2 - 5th to 9th grade, 3 - secondary education or 4 - higher education)</li>
+<li>
+<code>Fedu</code> : father's education (numeric: 0 - none,  1 - primary education (4th grade), 2 - 5th to 9th grade, 3 - secondary education or 4 - higher education)</li>
+<li>
+<code>Mjob</code> : mother's job (nominal: "teacher", "health" care related, civil "services" (e.g. administrative or police), "at_home" or "other")</li>
+<li>
+<code>Fjob</code> : father's job (nominal: "teacher", "health" care related, civil "services" (e.g. administrative or police), "at_home" or "other")</li>
+<li>
+<code>reason</code> : reason to choose this school (nominal: close to "home", school "reputation", "course" preference or "other")</li>
+<li>
+<code>guardian</code> : student's guardian (nominal: "mother", "father" or "other")</li>
+<li>
+<code>traveltime</code> : home to school travel time (numeric: 1 - &lt;15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - &gt;1 hour)</li>
+<li>
+<code>studytime</code> : weekly study time (numeric: 1 - &lt;2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - &gt;10 hours)</li>
+<li>
+<code>failures</code> : number of past class failures (numeric: n if 1&lt;=n&lt;3, else 4)</li>
+<li>
+<code>schoolsup</code> : extra educational support (binary: yes or no)</li>
+<li>
+<code>famsup</code> : family educational support (binary: yes or no)</li>
+<li>
+<code>paid</code> : extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)</li>
+<li>
+<code>activities</code> : extra-curricular activities (binary: yes or no)</li>
+<li>
+<code>nursery</code> : attended nursery school (binary: yes or no)</li>
+<li>
+<code>higher</code> : wants to take higher education (binary: yes or no)</li>
+<li>
+<code>internet</code> : Internet access at home (binary: yes or no)</li>
+<li>
+<code>romantic</code> : with a romantic relationship (binary: yes or no)</li>
+<li>
+<code>famrel</code> : quality of family relationships (numeric: from 1 - very bad to 5 - excellent)</li>
+<li>
+<code>freetime</code> : free time after school (numeric: from 1 - very low to 5 - very high)</li>
+<li>
+<code>goout</code> : going out with friends (numeric: from 1 - very low to 5 - very high)</li>
+<li>
+<code>Dalc</code> : workday alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
+<li>
+<code>Walc</code> : weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
+<li>
+<code>health</code> : current health status (numeric: from 1 - very bad to 5 - very good)</li>
+<li>
+<code>absences</code> : number of school absences (numeric: from 0 to 93)</li>
+<li>
+<code>passed</code> : did the student pass the final exam (binary: yes or no)
+# student_intervention</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/rishabmps/student_intervention">Student intervention</a> is maintained by <a href="https://github.com/rishabmps">rishabmps</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
